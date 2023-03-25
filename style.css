@@ -14,14 +14,14 @@ body {
 #appTitle {
   margin-top: 0;
   font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .elements {
   margin-top: 1%;
   color: #f96d25;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 .elements:hover {
@@ -35,7 +35,7 @@ body {
   margin-top: 1%;
   font-family: 'Dosis', sans-serif;
   font-family: 'Permanent Marker', cursive;
-  font-size: x-large;
+  font-size: large;
   border: 4px dotted black;
   border-radius: 5px;
   width: 350px;
@@ -48,19 +48,19 @@ body {
   align-items: center;
   font-family: 'Dosis', sans-serif;
   font-family: 'Permanent Marker', cursive;
-  font-size: x-large;
+  font-size: large;
 }
 
 #canvasForUser {
   display: block;
   margin-top: 3%;
-  width: 200px;
+  width: 100px;
 }
 
 #canvasForComputer {
   display: block;
   margin-top: 3%;
-  width: 200px;
+  width: 100px;
 }
 
 #canvasContainer {
@@ -78,7 +78,7 @@ body {
   margin-top: 1%;
   font-family: 'Dosis', sans-serif;
   font-family: 'Permanent Marker', cursive;
-  font-size: x-large;
+  font-size: large;
 }
 
 #imageContainer {
