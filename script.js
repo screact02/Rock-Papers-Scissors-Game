@@ -165,7 +165,7 @@ function displayVerdictForPaperSelection() {
   }
 }
 function displayVerdictForScissorsSelection() {
-   if (paperHasBeenClicked === false) {
+   if (scissorsHasBeenClicked === false) {
     return;
   }
     document.getElementById("selectionMessage").style = "display:block";
