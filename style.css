@@ -1,7 +1,244 @@
 body {
-  margin: 0;
-  width: 100vw;
-  padding: 0;
   text-align: center;
-  background-color: #ffc6a5;
+  background-color: #1b3646;
+}
+
+.container {
+  background-color: #90e96b;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 12%;
+  height: 98vh;
+}
+
+#appTitle {
+  margin-top: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+.elements {
+  margin-top: 1%;
+  color: #f96d25;
+  width: 250px;
+  height: 250px;
+}
+
+.elements:hover {
+  transform: translate3d(0, 4px, 0);
+}
+
+#scoreCard {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 1%;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+  border: 4px dotted black;
+  border-radius: 5px;
+  width: 350px;
+  height: 100px;
+}
+
+#scoreTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+}
+
+#canvasForUser {
+  display: block;
+  margin-top: 3%;
+  width: 200px;
+}
+
+#canvasForComputer {
+  display: block;
+  margin-top: 3%;
+  width: 200px;
+}
+
+#canvasContainer {
+  display: flex;
+}
+
+#liveCanvasContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16%;
+}
+
+#selectionMessage {
+  margin-right: 4%;
+  margin-top: 1%;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#userElementSelection,
+#computerElementSelection {
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: medium;
+  margin-top: 5%;
+}
+
+#button {
+  margin-top: 0%;
+  padding: 0;
+  align-self: center;
+  background-color: #90e96b;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: medium;
+}
+
+#button:hover {
+  transform: translate3d(0, 4px, 0);
+}
+
+
+/*CSS for responsive design*/
+@media screen and (max-width: 500px) {
+  #appTitle {
+    font-size: 30px;
+    margin-right: 5%;
+  }
+
+  .container {
+    background-color: #90e96b;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-radius: 1%;
+    height: 75vh;
+    margin-top: 10%;
+  }
+
+  body {
+    margin-left: 0;
+    height: 100vh;
+  }
+
+  #scoreTitle {
+    font-size: medium;
+    margin-left: 35%;
+  }
+
+  #scoreCard {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 5%;
+    font-size: small;
+    width: 200px;
+    height: 100px;
+    border: 4px dotted black;
+  }
+
+  #selectionMessage {
+    margin-top: 10%;
+    margin-left: 26%;
+    width: 130px;
+    font-size: small;
+  }
+
+  #computerCanvasContainer,
+  #userCanvasContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95px;
+    margin-left: 20%;
+
+  }
+
+  #computerElementSelection {
+    font-size: x-small;
+    width: 150px;
+    margin-top: 10%;
+    margin-right: 3%;
+    padding: 0;
+  }
+
+  #userElementSelection {
+    margin-left: 35%;
+    font-size: x-small;
+    width: 100px;
+    margin-top: 10%;
+    padding: 0;
+  }
+
+  .elements {
+    width: 80px;
+    height: 80px;
+  }
+
+  #canvasForComputer {
+    margin-top: 1.5%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20%;
+  }
+
+  #canvasForUser {
+    width: 80px;
+    height: 80px;
+    margin-left: 35%;
+  }
+
+  #imageContainer {
+    margin-right: 5%;
+  }
+
+  #liveCanvasContainer {
+    margin-right: 35%;
+    margin-top: 5%;
+  }
+
+  #scoreTitle {
+    margin-right: 35%;
+  }
+
+  #button {
+    margin-top: 0%;
+    padding: 0;
+    align-self: center;
+    background-color: #1b3646;
+    color: #fff;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-size: small;
+    width: 150px;
+  }
+
+  #button:hover {
+    transform: translate3d(0, 4px, 0);
+  }
 }

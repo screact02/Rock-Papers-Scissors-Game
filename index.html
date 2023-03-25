@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors!</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
-      <h1 id="appName">Rock, Paper, Scissors!</h1>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-        <canvas class="elements"></canvas>
-        <canvas class="elements"></canvas>
-        <canvas class="elements"></canvas>
+      <h1 id="appTitle">Rock, Paper, Scissors!</h1>
+      <div id="scoreTitle"><u>Score</u>
+        <div id="scoreCard">
+          <div>
+            <div>User</div>
+            <div><span id="userScore">0</span></div>
+          </div>
+          <div>
+            <div>Draw</div>
+            <div><span id="drawScore">0</span></div>
+          </div>
+          <div>
+            <div>Computer</div>
+            <div><span id="computerScore">0</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <div id="liveCanvasContainer">
+        <div id="userCanvasContainer">
+          <div id="userElementSelection"></div>
+          <canvas id="canvasForUser" width="150px" height="150px"></canvas>
+        </div>
+        <div id="computerCanvasContainer">
+          <div id="computerElementSelection"></div>
+          <canvas id="canvasForComputer" width="150px" height="150px"></canvas>
+        </div>
+      </div>
+      <div id="selectionMessage">select your move</div>
+      <div id="imageContainer">
+        <img src="./images/rock.png" alt="rock icon" class="elements" width="150px" height="150px" id="rock">
+        <img src="./images/paper.png" alt="paper icon" class="elements" width="150px" height="150px" id="paper">
+        <img src="./images/scissors.png" alt="scissors icon" class="elements" width="150px" height="150px"
+          id="scissors">
+      </div>
+      <button onclick="reloadPage()" id="button" class="button-55" role="button">Start a New Game</button>
     </div>
-
+    </div>
     <script src="script.js"></script>
   </body>
+
 </html>
